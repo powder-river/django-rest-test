@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'ldap3',
     'snippets.apps.SnippetsConfig',
     'debug_toolbar',
 ]
