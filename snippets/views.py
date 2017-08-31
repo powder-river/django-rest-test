@@ -7,6 +7,15 @@ from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 # Create your views here.
 
+
+##so note that this is the bare minmum to render JsonResponse
+## this works like the controller in rails
+@csrf_exempt
+def snippet_custom(request):
+    if request.method == 'GET':
+        my_json = {"response":[{"my-key":"my-value"}]}
+        return JsonResponse(my_json)
+
 @csrf_exempt
 def snippet_list(request):
     """
