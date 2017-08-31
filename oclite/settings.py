@@ -37,10 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'ldap3',
-    'snippets.apps.SnippetsConfig',
-    'debug_toolbar',
+    'rest_framework', #django rest framework library
+    'ldap3', #ldap library
+    'snippets.apps.SnippetsConfig', #snippets app
+    'ldap.apps.LdapConfig', #ldap app
+    'debug_toolbar', #debug toolbar library (not sure it's being used without html views
 ]
 
 MIDDLEWARE = [
